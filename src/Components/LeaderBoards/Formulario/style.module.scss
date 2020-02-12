@@ -10,7 +10,9 @@ $colorAzul: #111e6c;
     letter-spacing: normal;
 }
 
-
+.contenedorX{
+    display: none;
+}
 .contenedorFormulario{
     margin-top: 8%;
     width: 34vw;
@@ -136,6 +138,14 @@ $colorAzul: #111e6c;
 
 @media only screen and (max-width: 768px) {
 
+    .contenedorX{
+        display: block;
+        img{
+            left: 90%;
+            position: relative;
+            width: 3.5vw;
+        }
+    }
 
     .contenedorFormulario{
         width: 86vw;

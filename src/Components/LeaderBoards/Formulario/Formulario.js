@@ -1,5 +1,7 @@
 import React from 'react'
 import Logo from './../../../Assets/Images/logoBold.png'
+import xIcon from './../../../Assets/Images/xIcon.png'
+
 import whatsButton from './../../../Assets/Images/whatsappButton.png'
 import faceButton from './../../../Assets/Images/facebookButton.png'
 import EmailButton from './../../../Assets/Images/emailButton.jpg'
@@ -9,6 +11,12 @@ import styles from './style.module.scss';
 export const Formulario = () => {
     return (
         <div className={styles.contenedorFormulario}>
+
+
+            <div className={styles.contenedorX}>
+                <img className={styles.xIcon} src={xIcon} alt="xIcon"></img>
+            </div>
+
             <div className={styles.contenedorTexto}>
                 <img className={styles.logo} src={Logo} alt="LogoBold"></img>
                 <h1>¡Estás en la posición #150 para ser pionero bold!</h1>
