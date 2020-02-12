@@ -1,0 +1,219 @@
+$colorAzulGradient: #121e6c;
+$colorRojoGradient: #ee424e;
+$colorAzul: #111e6c;
+
+
+@mixin normal-text {
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+
+.contenedorFormulario{
+    margin-top: 8%;
+    width: 34vw;
+    h4{
+        font-family: Montserrat-ExtraLight;
+        color: $colorAzul;
+        font-size: 1.2rem;
+        margin-bottom: 0px;
+    }
+}
+
+.logo{
+    width: 114px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 31px;
+}
+
+
+.contenedorTexto {
+
+
+   
+
+    p{
+        @include normal-text;
+        width: 30vw;
+        object-fit: contain;
+        font-family: Montserrat-Medium;
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: $colorAzul;
+    }
+
+    p.p1{
+        width: 31vw;
+    }
+
+    h1{
+        @include normal-text;
+        object-fit: contain;
+        opacity: 0.9;
+        background-image: linear-gradient(262deg, $colorRojoGradient 50%, $colorAzulGradient 86%);
+        font-family: Montserrat-bold;
+        font-size: 3rem;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    p:nth-child(even){
+        margin-bottom: 4rem;
+    }
+
+  
+    
+}
+
+
+.contenedorCopiar{
+    position: relative;
+    margin-bottom: 13px;
+
+    h2{
+        margin-bottom: 0px;
+        font-family: Montserrat-bold;
+        font-size: 1.5rem;
+        width: 259px;
+        height: 24px;
+        object-fit: contain;
+        font-weight: 500;
+        @include normal-text;
+        a{
+            color: $colorAzul;
+            text-decoration:none
+        }
+    }
+
+    button{
+        position: absolute;
+        right: 0;
+        width: 138px;
+        height: 68px;
+        object-fit: contain;
+        border-radius: 55.3px;
+        bottom: 20px;
+        background-color: #ef434e;
+        font-family: Montserrat-bold;
+        color: #ffffff;
+        border: 0;
+        cursor: pointer;
+        font-size: 1.6rem;
+    }
+
+    
+}
+
+.contenedorCopiar:after{
+    content:"";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    border-top: 4px solid $colorAzul;
+    border-radius: 13%;
+}
+
+
+
+
+.contenedorBotonera{
+    img{
+        height: 45px;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .contenedorFormulario{
+        width: 86vw;
+        h4{
+            font-size: 1rem;
+        }
+    }
+
+    .contenedorTexto {
+        text-align: center;
+        img{
+            display: none;
+        }
+
+        p:nth-child(even){
+            margin-bottom: 3rem;
+        }
+    }
+
+
+    .contenedorTexto{
+        h1{
+            font-size: 2.2rem;
+        }
+
+        p,p.p1{
+            width: 73vw;
+            font-size: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+     
+
+    }
+
+
+
+    .contenedorCopiar{
+        height: 20px;
+        margin-bottom: 93px;
+        h2{
+            font-size: 1rem;
+            padding-bottom: 2px;
+        }
+
+        button{
+            top: 19px;
+            position: relative;
+            right: 0;
+            bottom:unset;
+            width: 45%;
+            height: 44px;
+            font-size: 0.9rem;
+            margin-left: 27.5%;
+            margin-right: 27.5%;
+        }
+    }
+
+    .contenedorCopiar:after{
+        content: "";
+        display: inline-block;
+        height: 0.5em;
+        vertical-align: bottom;
+        width: 100%;
+        border-top: 4px solid #111e6c;
+        border-radius: 13%;
+        position: absolute;
+        left: 0;
+    }
+
+
+    .contenedorBotonera{
+        margin-top: 33px;
+        margin-bottom: 33px;
+        img{
+            height: 6.8vw;
+            margin-right: 4px;
+        }
+    }
+}

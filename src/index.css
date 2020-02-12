@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: local('Montserrat-bold'), url(./Assets/Fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Montserrat-thin';
+  src: local('Montserrat-thin'), url(./Assets/Fonts/Montserrat-Light.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: local('Montserrat-Medium'), url(./Assets/Fonts/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-ExtraLight';
+  src: local('Montserrat-ExtraLight'), url(./Assets/Fonts/Montserrat-ExtraLight.ttf) format('truetype');
+}
